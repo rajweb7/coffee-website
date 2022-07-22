@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+  width: .5rem;
+}
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+  background: rgb(255, 255, 255);
+  border-radius: 10rem;
+}
+body{
+  background:#000000;
+  cursor: pointer;
+}
+.header{
+  background-color:black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding:0.1rem 7%;
+  position: fixed;
+  top:0; left: 0; right: 0;
+  z-index: 1;
+  border-bottom: 1px solid white;
+}
+.header .navbar a{
+  padding: 0px 20px;
+  font-size: 1.3em;
+  color: white;
+  font-family: serif;
+  font-weight: 200;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 1s;
+}
+.header .navbar a:hover{
+  color: rgb(255, 217, 0);
+}
+.home .main img{
+  position: relative;
+  top: 0; left: 0;
+   width: 100%;
+   height: 100vh;
+  object-fit: cover;
+}
+.home .main h4{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: white;
+  font-size: 40px;
+  font-weight: 200;
+  text-transform: capitalize;
+  font-family: 'Edu TAS Beginner', cursive;
+}
+.home .main p{
+  width: 20%;
+  padding: 1rem;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  color: white;
+  font-size: 40px;
+  font-weight: 200;
+  text-transform: capitalize;
+  font-family: 'Splash', cursive;
+}
+.home .main p span{
+  color: rgb(255, 208, 0);
+}
+.home .main button{
+  width: 10%;
+  position: absolute;
+  top: 75%;
+  left: 15%;
+  padding: 15px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 100;
+  font-family: serif;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(43, 42, 42, 0.596);
+  letter-spacing: 1.5px;
+  color:rgb(255, 9, 9);
+  transition: 0.5s;
+}
+.home .main button:hover{
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+.about .text1{
+  position: relative;
+  padding: 1cm;
+}
+.about h2{
+  margin: 0;
+  font-family:serif;
+  padding-top: 40px;
+  font-weight: 500;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(255, 208, 0);
+  margin: 0px;
+}
+.about h2 span{
+  color: #fff;
+}
+.about .container{
+  max-width: 1280px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about .container .box{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 450px;
+  border: 2px solid wheat;
+  background-color: #815829cc;
+}
+.about .container .box img{
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about .container .box .text{
+  display: inline;
+  position: absolute;
+  top: 0;left: 0;
+}
+.about .container .box .text h3{
+  color: #fff;
+  text-align: center;
+  margin: 50px;
+  padding: 20px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.4em;
+  font-weight: 300;
+}
+.about .container .box .text h3 span{
+  color:rgb(255, 208, 0) ;
+}
+.about .container .box .text p{
+  font-family: 'Cinzel Decorative', cursive;
+  color: antiquewhite;
+  text-align: center;
+  padding: 0px 25px;
+  letter-spacing: 0.5px;
+}
+.menu .text1{
+  position: relative;
+  padding: 1cm;
+}
+.menu h2{
+  margin: 0;
+  padding-top: 40px;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  font-family: serif;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.menu h2 span{
+  color: rgb(255, 208, 0) ;
+
+}
+.menu .container{
+  max-width: 1350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+.menu .container .box{
+  position:relative;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px;
+  overflow: hidden;
+  border: 1px solid wheat;
+}
+.menu .container .box img{
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.menu .container .box .card{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(0, 0, 0, 0.644);
+  transform: translateY(100%);
+  transition: 1.2s;
+}
+.menu .container .box:hover .card{
+  transform: translateY(0%);
+}
+.menu .container .box .card h1{
+  font-family: 'Dancing Script', cursive;
+  color: rgb(255, 208, 0);
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.menu .container .box .card p{
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  padding: 30px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.review .text2{
+  position: relative;
+  padding: 1cm;
+}
+.review h1{
+  margin: 0;
+  padding-top: 40px;
+  position: relative;
+  color: rgb(255, 208, 0);
+  text-align: center;
+  font-family: serif;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  font-weight: 300;
+
+}
+.review h1 span{
+  color: #fff;
+}
+.review .container{
+  max-width: 1200px;
+  padding: 0px 30px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.review .container .card{
+  position: relative;
+  width: 350px;
+  height: 380px;
+  background-color: rgba(105, 102, 102, 0.39);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border: 2px solid wheat;
+  border-radius: 15px;
+}
+.review .container .card .col img{
+  position: relative;
+  top: 0;left: 20%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 20px;
+}
+.review .container .card .tex h3{
+  text-align: center;
+  font-size: 20px;
+  color: rgb(255, 0, 76);
+} 
+.review .container .card .tex p{
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 200;
+  color: white;
+}
+.review .container .card .tex a{
+  font-size: 20px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: rgb(0, 183, 255);
+  text-decoration: none;
+  letter-spacing: 1.2px;
+}
+.contact .tex{
+  position: relative;
+  padding: 1cm;
+}
+.contact h1{
+  margin: 0;
+  padding-top: 40px;
+  position: relative;
+  color:#fff;
+  text-align: center;
+  font-family: serif;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.contact h1 span{
+  color: rgb(255, 208, 0);
+}
+.contact form{
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact form .box{
+  position: relative;
+  margin: 0;
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid wheat;
+  cursor: pointer;
+  background-color: rgba(49, 70, 71, 0.705);
+}
+.contact form .box h1{
+ 
+  font-size: 2.5rem;
+  font-weight: 200;
+  font-family:serif;
+  text-transform: uppercase;
+  color:wheat;
+  cursor: pointer;
+}
+.contact form .box .group{
+  padding: 20px 20px;
+}
+.group label{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 2%;left: 6%;
+}
+.group input{
+  margin-top: 10px;
+  width: 100vh;
+  height: 50px;
+  border:none;
+  outline: none;
+  background-color:rgba(0, 0, 0, 0.363);
+  border-radius: 15px;
+  font-size: 15px;
+  color: #fff;
+  padding-left: 50px;
+  cursor: text;
+}
+button{
+  width: 250px;
+  margin: 30px;
+  padding: 10px;
+  cursor: pointer;
+  background-color:#ffffff;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  color: rgb(20, 20, 20);
+  font-weight: bold;
+  font-family: serif;
+  transition: 1s;
+}
+button:hover{
+  background-color: darkgray;
+}
+footer{
+  width: 100%;
+  margin-top:10% ;
+  background-color: #262f3675;
+}
+footer .container{
+  max-height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+footer .container h1{
+  margin: 20px;
+  padding: 20px;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: rgb(255, 193, 21);
+}
+footer .container h1 span{
+ color: #FFF;
+}
+footer .container .social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .social p{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(223, 223, 223);
+  margin: 10px;
+  border-radius: 50%;
+  color: rgb(3, 3, 3);
+  transition: 1s;
+}
+footer .container .social p i{
+  font-size: 28px;
+
+}
+.fa-facebook:hover{
+  color: blue;
+}
+.fa-twitter:hover{
+  color:#00BFFF;
+}
+.fa-instagram:hover{
+  color: crimson;
+}
+.fa-youtube:hover{
+  color: red;
+}
+footer h2{
+  margin-top: 30px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid wheat;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 100;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+}
+footer h2 span{
+  color: rgb(255, 209, 2);
+}
